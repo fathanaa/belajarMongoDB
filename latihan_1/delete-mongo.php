@@ -6,7 +6,7 @@ $bulkWrite -> delete(
     ['limit' => true]
 );
 
-$manager -> executeBulkWrite("databaseAnda.collectionUser" $bulkWrite);
+$manager -> executeBulkWrite("databaseAnda.collectionUser",$bulkWrite);
 //Tampilkan hasil
 $query = new MongoDB\Driver\Query([]);
 $cursor = $manager -> executeQuery("databaseAnda.collectionUser",$query);
